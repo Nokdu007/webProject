@@ -1,0 +1,21 @@
+<div class="product-card">
+  
+<div class="product-image"
+       [routerLink]="['/product-detail']"
+       [queryParams]="{ product_id: products.id }">
+    <img [src]="products.image" alt="Cool Sneakers" />
+    <div class="discount-badge">{{products.category}}</div>
+  </div>
+  
+  <div class="product-info"
+       [routerLink]="['/product-detail']"
+       [queryParams]="{ product_id: products.id }">
+    <h3 class="product-tilte">{{products.title}}</h3>
+    <p class="product-description">{{products.description}}</p>
+  </div>
+
+  <div class="btnAdd">
+    <button class="buy-btn" (click)="AddToCart(products)">Buy Now</button>
+  </div>
+
+</div>

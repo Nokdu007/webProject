@@ -1,0 +1,12 @@
+<nav class="navbar">
+    <div class="logo">ShopZone</div>
+    <ul class="nav-links">
+      <li><a href="#" routerLink="/">Home</a></li>
+      <li><a href="#" routerLink="/page-product">Products</a></li>
+      <li><a href="#" routerLink="/about">About</a></li>
+      <li><a href="#" routerLink="/contact">Contact</a></li>
+    </ul>
+    <div class="cart-icon">
+      <i class='bx bx-cart-alt' routerLink="/cart">{{cartService.getCartItems().length}}</i>
+    </div>
+  </nav>
